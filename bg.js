@@ -64,29 +64,8 @@ chrome.storage.local.get('vkColorChanger', function(result){
 	"div.docs_tt_preview,div.like_tt,div.wall_tt.rich,div.mention_tt," +
 	"div.profile_map_first" +
 	"{"+filter+";}"+
-
-        /*"img.docs_item_thumb_img,img.chat_tab_img,img.fc_contact_photo,img.photo_row_img,td.dialogs_photo,img.im_user_holder,div.im_photo_holder," +
-	"img.im_log_author_chat_thumb,img.emoji,img.emoji_css,img.emoji_tab_img,img.fc_msgs_author,img.fc_photo_thumb,img.wl_owner_head_img," +
-	"img.photos_choose_album_img,img.docs_choose_photo,img.wall_album_cover,div.page_doc_photo,img.preview,img.page_preview_map,div.page_preview_doc_photo," +
-	"img.pva_img,img.pva_photo_img,img#owner_photo_img,img#owner_photo_crop_img,div.tag_frame,div#owner_photo_preview100,div#owner_photo_preview50," +
-	"img.leaflet-tile,div.YMaps-tile-container,embed#flash_camera," +
-	"canvas#graffiti_cpicker,canvas#graffiti_controls,div#graffiti_aligner," +
-	"div.im_stickerpack_preview,img.im_stickerpack_img,a.emoji_sticker_item,img.im_sticker_bl_demo_thumb,img.im_stickers_banner_thumb,img.im_gift," +
-	"img.giftImg,div.gift_wrap,div.gift_thumb," +
-	"div#page_avatar,img.page_post_thumb_sized_photo,img.page_photo_thumb_big,a.video,img.reply_image,img.feedback_row_photo,div.feedback_photo_icon," +
-        "a.ava,a.published_by_photo,a.post_image,div.thumb,a#pv_photo,div.pv_thumb,img#pv_author_img,img.dialogs_inline_author,div.im_photo,a.bp_thumb,img.blst_img," +
-	"img.wk_likes_liker_img,img.wdd_img," +
-	"img.search_item_img,img.page_media_link_img," +
-	"img.fans_fan_img,img.fans_idol_img," +
-        "div.page_media_thumbed_link > table > tbody > tr > td.page_media_link_thumb," +
-	"div.fave_link_image,img.fave_u_img,img.groups_row_img,img.gle_img,div.feed_friend_image,div.fave_photo_inner,a.fave_video_item," +
-	"img.audio_friend_photo,img.friends_photo_img,div.common_friends," +
-        ".video_image_div,a.video_row_img,div.video_info_tutorial_screen," +
-	"img.apps_featured_img_big,img.apps_featured_img_small,img.apps_recent_img,img.apps_feed_user_img,img.apps_feed_app_img,img.apps_wide_img," +
-	"img.settings_bl_photo,td.flist_item_img,img.wddi_img,div#profile_view_as>a.fl_l>img," +
-	"a.like_share_widget_icon" +*/
-
         "img:not(.can_zoom),embed#flash_camera," +
+		".mv_recom_screen, .fave_video_thumb," +
 	"canvas#graffiti_cpicker,canvas#graffiti_controls,div#graffiti_aligner," +
 	"div.like_share_widget_preview_wrap," +
 	"div.fave_photo_inner,div.page_doc_photo,div.im_doc_photo," +
