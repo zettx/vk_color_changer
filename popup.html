@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <div class="picker" id="primary_block" >
+            <div id="line">
+                <div id="arrows">
+                    <div class="left_arrow"></div>
+                    <div class="right_arrow"></div>
+                </div>
+            </div>
+            <div id="block_picker"></div>
+            <input type="hidden" id="hue-deg" />
+        </div>
+        <div class="options">
+           <input type="checkbox" id="gray" name="gray"/>Чёрно-белый ВК (выбрать цвет нельзя)<br>
+           <input type="checkbox" id="sepia" name="sepia"/>Сепия (выбрать цвет нельзя)<br>
+           <input type="checkbox" id="invert" name="invert"/>Негатив
+            <hr>
+           <label>Фоновое изображение (нажмите Enter для потверждения изображения):<br><input type="text" alt="Нажмите Enter для подтверждения" title="Нажмите Enter для подтверждения" id="background-image" name="background-image"/> </label>
+        </div>
+        <script type="text/javascript" src="js/picker.js"></script>
+    </body>
+</html>
