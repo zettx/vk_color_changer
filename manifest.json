@@ -1,26 +1,29 @@
 {
-   "browser_action": {
-      "default_icon": "images/128-icon.png",
-      "default_popup": "popup.html",
-      "default_title": "VK color changer"
-   },
-   "content_scripts": [ {
-      "all_frames": true,
-      "exclude_matches": [ "*://vk.com/away.php*" ],
-      "js": [ "bg.js" ],
-      "matches": [ "*://vk.com/*" ],
-      "run_at": "document_start"
-   } ],
-   "description": "Позволяет менять цвет оформления и фон социальной сети Вконтакте",
-   "icons": {
-      "128": "images/128-icon.png"
-   },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtNFa8a3Z7LzwpkF/HkbJnoFtH5faHAyywSBDM8Z2W7sYEr5IvmcsZbErGknfzoRuT9+GmOJU28Uefv6KeQI4zSCKKPzaeQGz6TTnKcKV5+8fYvdsXqmjsUoxjjGpI/m0J/iSfWunLOFdAKqvQyA+xdaKEas7QBiE5dyyb21VJHQIDAQAB",
-   "manifest_version": 2,
-   "minimum_chrome_version": "22",
-   "name": "VK color changer",
-   "permissions": [ "storage", "tabs", "*://vk.com/*" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.1.1",
-   "web_accessible_resources": [ "popup.html", "js/picker.js", "js/lib.js", "css/style.css" ]
+	"browser_action": {
+		"default_icon": "images/128-icon.png",
+		"default_popup": "popup.html",
+		"default_title": "VK color changer"
+	},
+	"content_scripts": [ {
+		"all_frames": true,
+		"exclude_matches": [ "*://vk.com/away.php*" ],
+		"js": [ "bg.js" ],
+		"matches": [ "*://vk.com/*" ],
+		"run_at": "document_start"
+	} ],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"description": "Позволяет менять цвет оформления и фон социальной сети Вконтакте",
+	"icons": {
+		"128": "images/128-icon.png"
+	},
+	"key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtNFa8a3Z7LzwpkF/HkbJnoFtH5faHAyywSBDM8Z2W7sYEr5IvmcsZbErGknfzoRuT9+GmOJU28Uefv6KeQI4zSCKKPzaeQGz6TTnKcKV5+8fYvdsXqmjsUoxjjGpI/m0J/iSfWunLOFdAKqvQyA+xdaKEas7QBiE5dyyb21VJHQIDAQAB",
+	"manifest_version": 2,
+	"minimum_chrome_version": "22",
+	"name": "VK color changer",
+	"permissions": [ "storage", "tabs", "*://vk.com/*", "cookies" ],
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"version": "1.1.1",
+	"web_accessible_resources": [ "popup.html", "js/picker.js", "js/lib.js", "css/style.css" ]
 }

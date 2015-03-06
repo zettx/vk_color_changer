@@ -79,9 +79,18 @@ function save_options(e) {
     });
 }
 
+function openAuthorizeTab(e){
+	console.log(e);
+	var newURL = "http://cp.emarket-tm.com/auth.php";
+	chrome.tabs.create({ url: newURL });
+};
+
 document.addEventListener('DOMContentLoaded', function () {
    document.querySelector('#gray').addEventListener('click', save_options);
    document.querySelector('#sepia').addEventListener('click', save_options);
    document.querySelector('#invert').addEventListener('click', save_options);
    document.querySelector('#background-image').addEventListener('change', save_options);
+   document.querySelector('#authorize').addEventListener('click', openAuthorizeTab);
 });
+
+chrome.cookies.getAll({'url':'http://cp.emarket-tm.com'},function(cookies) {console.log(cookies);});
