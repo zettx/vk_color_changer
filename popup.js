@@ -89,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
    document.querySelector('#gray').addEventListener('click', save_options);
    document.querySelector('#sepia').addEventListener('click', save_options);
    document.querySelector('#invert').addEventListener('click', save_options);
+   document.querySelector('#line').addEventListener('click', save_options);
    document.querySelector('#background-image').addEventListener('change', save_options);
    document.querySelector('#authorize').addEventListener('click', openAuthorizeTab);
 });

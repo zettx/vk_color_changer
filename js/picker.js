@@ -33,7 +33,6 @@ var Line ={
             Line.Hue = t;
 
             document.getElementById('hue-deg').value = t;
-	    save_options(t);
 
             bk.style.backgroundColor = "rgb("+convert.hsv_rgb(t,55,65)+")";
         };
